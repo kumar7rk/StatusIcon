@@ -17,6 +17,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        // code from - https://stackoverflow.com/a/44297936/2900127
+        //shows the empty notification with an icon
+        // and a icon in the status bar
+        // remove the notification and remove the status icon
+        // not required
         RemoteViews contentView = new RemoteViews(getPackageName(),
                 R.layout.notification_layout);
         Context application = getApplicationContext();
